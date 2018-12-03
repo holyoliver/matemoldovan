@@ -1,0 +1,85 @@
+body, html{
+    font-family: 'Louis George Café Light' !important;
+  font-size: 16px !important;
+}
+body {
+}
+nav{
+  font-family: 'Louis George Café Light';
+}
+.nav-link {
+  color: #F0FFFF;
+}
+.text-focus-in{
+  color: #F0FFFF;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  padding-left: 30px;
+  flex-grow: 2;
+  font-size: 2em;
+}
+.navbar {
+  color: #F0FFFF;
+  width: 100%;
+  height:  80px;
+  transition: 0.5s;
+}
+main{
+  padding-top: 80px;
+  width: 64.5em;
+
+}
+.text-focus-in {
+	-webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+.landing{
+  background: url('../../resources/images/backg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+#mainscreen{
+
+}
+
+
+
+@font-face {font-family:"Louis George Café Light";
+src:url("/resources/fonts/Louis_George_Cafe_Light.eot?") format("eot"),
+url("/resources/fonts/Louis_George_Cafe_Light.woff") format("woff"),
+url("/resources/fonts/Louis_George_Cafe_Light.ttf") format("truetype"),
+url("/resources/fonts/Louis_George_Cafe_Light.svg#LouisGeorgeCafeLight") format("svg");
+font-weight:normal;
+font-style:normal;}
+
+
+p {
+  font-family: 'Louis George Café Light';
+  font-weight: normal;
+  font-size: 60px;
+}
