@@ -10,33 +10,33 @@
 
   $(function() {
 
-      $('a').each(function() { /* [1] */
-           if ( location.hostname === this.hostname || !this.hostname.length ) { /* [1] */
+      $('a').each(function() {
+           if ( location.hostname === this.hostname || !this.hostname.length ) {
 
-              var link = $(this).attr("href"); /* [2] */
+              var link = $(this).attr("href");
 
-              if ( link.match("^#") ) { /* [3] */
+              if ( link.match("^#") ) {
 
                   $(this).click(function() {
-                      var target = $(link); /* [4] */
-                      target = target.length ? target : $('[name=' + this.hash.slice(1) +']'); /* [4] */
+                      var target = $(link);
+                      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
                       if (target.length) {
-                          $('html,body').animate({ /* [5] */
-                              scrollTop: target.offset().top - 70 /* [5] */
-                          }, 1000); return false; /* [5] */
+                          $('html,body').animate({
+                              scrollTop: target.offset().top - 70
+                          }, 1000); return false;
                       }
                   });
 
-              } else if ( link.match("^mailto") ) { /* [6] */
-                  // Act as normal  /* [6] */
+              } else if ( link.match("^mailto") ) {
+
               } else {
 
                   $(this).click(function(e) {
-                      e.preventDefault(); /* [7] */
-                      $('html').addClass('fadeSiteOut'); /* [8] */
-                      setTimeout(function() { /* [9] */
-                          window.location = link; /* [9] */
-                      }, 500); /* [9] */
+                      e.preventDefault();
+                      $('html').addClass('fadeSiteOut');
+                      setTimeout(function() {
+                          window.location = link;
+                      }, 500);
                   });
 
               }

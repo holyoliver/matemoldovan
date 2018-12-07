@@ -1,21 +1,22 @@
 body, html{
     font-family: 'Louis George Café Light', 'Didact Gothic';
-  font-size: 16px;
-  scroll-behavior: smooth;
+    font-size: 16px;
+    scroll-behavior: smooth;
     color: #F0FFFF;
-
 }
 html{
-    animation: fadeSiteIn 0.5s ease forwards;
+  animation: fadeSiteIn 1s ease forwards;
 }
 html.fadeSiteOut{
-  animation:  fadeSiteOut 0.5s ease forwards;
+  animation:  fadeSiteOut 1s ease forwards;
 }
 body {
+  height: 100%;
   background: url('../../resources/images/backg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
 nav{
   font-family: 'Louis George Café Light', 'Didact Gothic';
@@ -57,14 +58,23 @@ nav{
 }
 #portfolio{
   max-width: 80em;
-
 }
 #descrip{
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.carousel{
-
+#aboutme{
+  padding-top: 80px;
+  max-width: 70em;
+  margin-left: 0;
+}
+#aboutme h1{
+  padding-top: 50px;
+}
+#hobbies{
+  max-width: 70em;
+  margin-left: 0;
+  text-align: center;
 }
 .multiple-items{
   max-width: 70em;
@@ -127,22 +137,7 @@ nav{
     opacity: 1;
   }
 }
-.landing{
 
-}
-#aboutme{
-  padding-top: 80px;
-  max-width: 70em;
-  margin-left: 0;
-}
-#aboutme h1{
-  padding-top: 50px;
-}
-#hobbies{
-  max-width: 70em;
-  margin-left: 0;
-  text-align: center;
-}
 @keyframes fadeSiteIn {
     from   { opacity: 0; }
     to    { opacity: 1; }
@@ -152,8 +147,6 @@ nav{
     from   { opacity: 1; }
     to     { opacity: 0; }
 }
-
-
 
 @font-face {font-family:"Louis George Café Light";
 src:url("Louis_George_Cafe_Light.eot?") format("eot"),
