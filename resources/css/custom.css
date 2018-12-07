@@ -1,11 +1,27 @@
 body, html{
-    font-family: 'Louis George Café Light' !important;
-  font-size: 16px !important;
+    font-family: 'Louis George Café Light', 'Didact Gothic';
+  font-size: 16px;
+  scroll-behavior: smooth;
+    color: #F0FFFF;
+
+}
+html{
+    animation: fadeSiteIn 0.5s ease forwards;
+}
+html.fadeSiteOut{
+  animation:  fadeSiteOut 0.5s ease forwards;
 }
 body {
+  background: url('../../resources/images/backg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 nav{
-  font-family: 'Louis George Café Light';
+  font-family: 'Louis George Café Light', 'Didact Gothic';
+}
+.navbar i{
+  color: #F0FFFF;
 }
 .nav-link {
   color: #F0FFFF;
@@ -14,9 +30,18 @@ nav{
   color: #F0FFFF;
   text-transform: capitalize;
   letter-spacing: 5px;
-  padding-left: 30px;
   flex-grow: 2;
   font-size: 2em;
+  padding-left: 15px;
+}
+.text-focus-in1{
+  letter-spacing: 5px;
+  color: #F0FFFF;
+  font-size: 2em;
+  padding-left: 40px;
+}
+.navbar-nav{
+  letter-spacing: 2px;
 }
 .navbar {
   color: #F0FFFF;
@@ -24,14 +49,59 @@ nav{
   height:  80px;
   transition: 0.5s;
 }
-main{
+#mainscreen{
   padding-top: 80px;
-  width: 64.5em;
+  min-height: 100vh;
+  margin-left: 0;
+  max-width:  80em;
+}
+#portfolio{
+  max-width: 80em;
 
+}
+#descrip{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.carousel{
+
+}
+.multiple-items{
+  max-width: 70em;
+  margin-left: auto;
+  margin-right: auto;
 }
 .text-focus-in {
 	-webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+.text-focus-in1 {
+	-webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+	        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
 }
 @-webkit-keyframes text-focus-in {
   0% {
@@ -58,28 +128,37 @@ main{
   }
 }
 .landing{
-  background: url('../../resources/images/backg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-#mainscreen{
 
+}
+#aboutme{
+  padding-top: 80px;
+  max-width: 70em;
+  margin-left: 0;
+}
+#aboutme h1{
+  padding-top: 50px;
+}
+#hobbies{
+  max-width: 70em;
+  margin-left: 0;
+  text-align: center;
+}
+@keyframes fadeSiteIn {
+    from   { opacity: 0; }
+    to    { opacity: 1; }
+}
+
+@keyframes fadeSiteOut {
+    from   { opacity: 1; }
+    to     { opacity: 0; }
 }
 
 
 
 @font-face {font-family:"Louis George Café Light";
-src:url("/resources/fonts/Louis_George_Cafe_Light.eot?") format("eot"),
-url("/resources/fonts/Louis_George_Cafe_Light.woff") format("woff"),
-url("/resources/fonts/Louis_George_Cafe_Light.ttf") format("truetype"),
-url("/resources/fonts/Louis_George_Cafe_Light.svg#LouisGeorgeCafeLight") format("svg");
+src:url("Louis_George_Cafe_Light.eot?") format("eot"),
+url("Louis_George_Cafe_Light.woff") format("woff"),
+url("Louis_George_Cafe_Light.ttf") format("truetype"),
+url("Louis_George_Cafe_Light.svg#LouisGeorgeCafeLight") format("svg");
 font-weight:normal;
 font-style:normal;}
-
-
-p {
-  font-family: 'Louis George Café Light';
-  font-weight: normal;
-  font-size: 60px;
-}
