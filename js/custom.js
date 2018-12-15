@@ -4,7 +4,7 @@
       $('.navbar').css("background-color", "transparent");
     }
     else {
-      $('.navbar').css("background-color", "rgba(64, 64, 64, 0.5)");
+      $('.navbar').css("background-color", "rgba(64, 64, 64, 1)");
   	}
 	});
 

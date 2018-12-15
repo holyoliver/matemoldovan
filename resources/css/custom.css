@@ -57,7 +57,26 @@ nav{
   max-width:  80em;
 }
 #portfolio{
+  justify-content: space-around;
   max-width: 80em;
+  margin-left: 0;
+  padding-bottom: 50px;
+}
+#portfolio h1{
+
+  line-height: 3em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bolder;
+}
+#portfolio span{
+  color: #FDCA40;
+}
+#portfolio h2{
+  color: #e7e3d4;
+}
+#portfolio p{
+  font-style: italic;
 }
 #descrip{
   padding-top: 30px;
@@ -65,8 +84,9 @@ nav{
 }
 #aboutme{
   padding-top: 80px;
-  max-width: 70em;
+  max-width: 80em;
   margin-left: 0;
+  padding-left: 40px;
 }
 #aboutme h1{
   padding-top: 50px;
@@ -75,6 +95,42 @@ nav{
   max-width: 70em;
   margin-left: 0;
   text-align: center;
+}
+.pics{
+  opacity:;
+}
+#videos{
+  padding-left: 50px;
+  max-width: 80em;
+  margin-left: 0;
+}
+.vidtext{
+  letter-spacing: 2px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.vidtext span{
+  color: #FDCA40;
+}
+.card-title{
+  color: #F79824;
+}
+#videos p{
+  font-style: italic;
+}
+#videos h1{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 3em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bolder;
+}
+#vidcard{
+  background-color: rgba(64, 64, 64, 0.5);
+}
+#vide2{
+  padding-top: 30px;
 }
 .multiple-items{
   max-width: 70em;
