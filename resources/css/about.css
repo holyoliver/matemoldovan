@@ -1,3 +1,9 @@
+body, html{
+    font-family: 'Louis George Café Light', 'Didact Gothic';
+    font-size: 16px;
+    scroll-behavior: smooth;
+    color: #F0FFFF;
+  }
 .surn{
   color: #F0FFFF;
   text-transform: capitalize;
@@ -19,52 +25,69 @@
   padding-left: 20px;
 }
 .freet{
+  margin-top: 54px;
+  margin-bottom: 34px;
   font-weight: bolder;
   letter-spacing: 1px;
   text-transform: uppercase;
   padding-left: 20px;
 }
+.freetcont{
+  max-width: 80em;
+  margin-left: 0;
+}
 .welcomemess{
   line-height: 2em;
-  font-size: 17px;
-  letter-spacing: 2px;
-  font-style: italic;
+  font-size: 23px;
+  letter-spacing: 1px;
+  font-style:;
+  padding-left: 20px;
+}
+.welcomemess span{
+  color: #F58b4c;
 }
 #hobbies{
-  max-width: 70em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 80em;
   margin: 0;
-  height: 100%;
+  padding-left: 40px;
+}
+#hobbies .row{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 #aboutme img{
   width: 200px;
   height: 100%;
 }
 .part1{
-  letter-spacing: 1px;
+  font-size: 1.3em;
   text-align: justify;
 }
-.part1 span{
+.name{
   font-style: italic;
 }
+.color{
+  color: #F58b4c;
+}
 .part2{
-  font-size: 1.2em;
+  line-height: 1.8em;
+  letter-spacing: 1px;
+  font-size: 1.1em;
   text-align: justify;
   padding-top: 10px;
 }
 .part3{
-  line-height: 1.7em;
-  font-size: 18px;
+  line-height: 1.8em;
+  letter-spacing: 1px;
+  font-size: 1.1em;
   padding-top: 10px;
   text-align: justify;
 }
-.part3 p{
-  text-align: justify;
-}
+
 .part4{
-  line-height: 1.5em;
+  line-height: 1.8em;
+  letter-spacing: px;
+  font-size: 1.4em;
   text-align: justify;
   padding-top: 10px;
 }
@@ -72,37 +95,109 @@
   padding-left: 30px;
 }
 .part5{
+  line-height: 1.8em;
+  letter-spacing: 1px;
+  font-size: 1.1em;
   text-align: justify;
 }
 .part5 span{
   color: #F58b4c;
 }
 .bio1{
-  border-radius: 15%;
-  padding: 10px;
-  float: right;
-}
-.bio2{
-  border-radius: 10%;
-  padding-right: 10px;
-  padding-top: 10px;
+
+  border-radius: 1%;
+  margin-right: 10px;
+  margin-top: 5px;
   float: left;
 }
+.bio2{
+    height: 130px !important;
+  margin-top: 10px;
+  margin-left: 10px;
+  float: right;
+}
 .bio3{
-  width: 220px !important;
-  border-radius: 15%;
-  padding-right: 10px;
+  border-radius: 1%;
+  margin-right: 10px;
+  margin-top: 5px;
   float: left;
 }
 .bio4{
-  border-radius: 15%;
-  padding-left: 10px;
+  border-radius: 1%;
+  margin-left: 10px;
+  margin-top: 5px;
   float: right;
 }
 #aboutme h4{
 }
 h2{
   font-size: 19px;
+}
+.workicons{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 80em;
+  margin-left: 0;
+}
+.unreal img{
+  width: 100px !important;
+  height: 100% !important;
+}
+.unity img{
+  width: 100px !important;
+  height: 100% !important;
+}
+.fmod img{
+  width: 150px !important;
+  height: 100% !important;
+}
+.ableton img{
+  width: 140px  !important;
+  height: 100%  !important;
+}
+.logic img{
+  height: 100% !important;
+  width: 150px !important;
+}
+.wwise img{
+  height: 100% !important;
+  width: 140px !important;
+}
+.infinit{
+  height: 232px !important;
+  width: 100% !important;
+}
+.second{
+  padding-left: 0;
+  padding-right: 0;
+}
+@media screen and (max-width: 992px)    {
+  #hobbies{
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .workicons{
+    justify-content: space-around;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .workicons .ref{
+    align-items: center;
+  }
+  #aboutme{
+    padding-left: 15px;
+  }
+  .wwise{
+    padding-top: 40px;
+  }
+  .ableton{
+    padding-top: 40px;
+  }
+  .logic{
+    padding-top: 40px;
+  }
 }
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
 figure.snip0015 {
@@ -207,3 +302,10 @@ figure.snip0015:hover figcaption::before {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
+@font-face {font-family:"Louis George Café Light";
+src:url("/resources/fonts/Louis_George_Cafe_Light.eot?") format("eot"),
+url("/resources/fonts/Louis_George_Cafe_Light.woff") format("woff"),
+url("/resources/fonts/Louis_George_Cafe_Light.ttf") format("truetype"),
+url("/resources/fonts/Louis_George_Cafe_Light.svg#LouisGeorgeCafeLight") format("svg");
+font-weight:normal;
+font-style:normal;}

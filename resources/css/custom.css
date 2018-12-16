@@ -19,7 +19,10 @@ body {
   background-position: center;
 }
 nav{
-  font-family: 'Louis George Café Light', 'Didact Gothic';
+  font-family: 'Louis George Café Light', 'Rajdhani';
+}
+.rightmenu a:hover{
+  color: #ffe375;
 }
 .navbar i{
   color: #F0FFFF;
@@ -48,7 +51,10 @@ nav{
   color: #F0FFFF;
   width: 100%;
   height:  80px;
-  transition: 0.5s;
+  -webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
 }
 #mainscreen{
   padding-top: 80px;
@@ -76,7 +82,7 @@ nav{
   color: #e7e3d4;
 }
 #portfolio p{
-  font-style: italic;
+
 }
 #descrip{
   padding-top: 30px;
@@ -97,6 +103,7 @@ nav{
   text-align: center;
 }
 .pics{
+  max-width: 80em;
   opacity:;
 }
 #videos{
@@ -205,9 +212,9 @@ nav{
 }
 
 @font-face {font-family:"Louis George Café Light";
-src:url("Louis_George_Cafe_Light.eot?") format("eot"),
-url("Louis_George_Cafe_Light.woff") format("woff"),
-url("Louis_George_Cafe_Light.ttf") format("truetype"),
-url("Louis_George_Cafe_Light.svg#LouisGeorgeCafeLight") format("svg");
+src:url("/resources/fonts/Louis_George_Cafe_Light.eot?") format("eot"),
+url("/resources/fonts/Louis_George_Cafe_Light.woff") format("woff"),
+url("/resources/fonts/Louis_George_Cafe_Light.ttf") format("truetype"),
+url("/resources/fonts/Louis_George_Cafe_Light.svg#LouisGeorgeCafeLight") format("svg");
 font-weight:normal;
 font-style:normal;}
