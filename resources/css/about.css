@@ -4,25 +4,32 @@ body, html{
     scroll-behavior: smooth;
     color: #F0FFFF;
   }
-.surn{
+.firstn{
   color: #F0FFFF;
   text-transform: capitalize;
   letter-spacing: 5px;
   flex-grow: 2;
   font-size: 2em;
-  padding-left: 15px;
-}
-.firstn{
   letter-spacing: 5px;
   color: #F0FFFF;
   font-size: 2em;
   padding-left: 40px;
 }
+.firstn a{
+  color: #F0FFFF;
+}
+.firstn a:hover{
+  text-decoration: none;
+  color: #F0FFFF;
+}
 .abouttext{
   font-weight: bolder;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding-left: 20px;
+  padding-left: px;
+}
+.abouttext span{
+  color: #FDCA40;
 }
 .freet{
   margin-top: 54px;
@@ -33,7 +40,7 @@ body, html{
   padding-left: 20px;
 }
 .freetcont{
-  max-width: 80em;
+  max-width: 75vw;
   margin-left: 0;
 }
 .welcomemess{
@@ -41,13 +48,13 @@ body, html{
   font-size: 23px;
   letter-spacing: 1px;
   font-style:;
-  padding-left: 20px;
+  padding-left: px;
 }
 .welcomemess span{
   color: #F58b4c;
 }
 #hobbies{
-  max-width: 80em;
+  max-width: 75vw;
   margin: 0;
   padding-left: 40px;
 }
@@ -55,16 +62,23 @@ body, html{
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.hob{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
 #aboutme img{
   width: 200px;
   height: 100%;
 }
 .part1{
-  font-size: 1.3em;
+  line-height: 1.8em;
+  letter-spacing: 1px;
+  font-size: 1.1em;
   text-align: justify;
-}
-.name{
-  font-style: italic;
+  text-justify: inter-word;
+
 }
 .color{
   color: #F58b4c;
@@ -74,6 +88,7 @@ body, html{
   letter-spacing: 1px;
   font-size: 1.1em;
   text-align: justify;
+  text-justify: inter-word;
   padding-top: 10px;
 }
 .part3{
@@ -82,6 +97,7 @@ body, html{
   font-size: 1.1em;
   padding-top: 10px;
   text-align: justify;
+  text-justify: inter-word;
 }
 
 .part4{
@@ -89,6 +105,7 @@ body, html{
   letter-spacing: px;
   font-size: 1.4em;
   text-align: justify;
+  text-justify: inter-word;
   padding-top: 10px;
 }
 .part4 span{
@@ -99,6 +116,8 @@ body, html{
   letter-spacing: 1px;
   font-size: 1.1em;
   text-align: justify;
+  text-justify: inter-word;
+  padding-top: 10px;
 }
 .part5 span{
   color: #F58b4c;
@@ -128,31 +147,33 @@ body, html{
   margin-top: 5px;
   float: right;
 }
-#aboutme h4{
+.freet span{
+  color: #FDCA40;
 }
+
 h2{
   font-size: 19px;
 }
 .workicons{
   margin-top: 50px;
   margin-bottom: 50px;
-  max-width: 80em;
+  max-width: 75vw;
   margin-left: 0;
 }
 .unreal img{
-  width: 100px !important;
+  width: 85px !important;
   height: 100% !important;
 }
 .unity img{
-  width: 100px !important;
+  width: 80px !important;
   height: 100% !important;
 }
 .fmod img{
-  width: 150px !important;
+  width: 120px !important;
   height: 100% !important;
 }
 .ableton img{
-  width: 140px  !important;
+  width: 110px  !important;
   height: 100%  !important;
 }
 .logic img{
@@ -161,19 +182,32 @@ h2{
 }
 .wwise img{
   height: 100% !important;
-  width: 140px !important;
-}
-.infinit{
-  height: 232px !important;
-  width: 100% !important;
+  width: 120px !important;
 }
 .second{
   padding-left: 0;
   padding-right: 0;
 }
+.design{
+
+  letter-spacing: 1px;
+  padding-top: 50px;
+  max-width: 75vw;
+  margin-left: 0;
+}
+.design h4{
+  line-height: .8em;
+  font-size: 1.2em;
+}
+.design a:hover{
+  color: #ffe375;
+}
+.design a{
+  color: #F0FFFF;
+}
 @media screen and (max-width: 992px)    {
   #hobbies{
-    max-width: 100%;
+
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -198,6 +232,21 @@ h2{
   .logic{
     padding-top: 40px;
   }
+  .abouttext{font-size: 1.8em;} .freet{font-size: 1.8em;}
+  .welcomemess{
+    font-size: 1em;
+  }
+  .part1{font-size: 0.8em;}.part2{font-size: 0.8em;}.part3{font-size: 0.8em;}.part5{font-size: 0.8em;}.part4{font-size: 1em;}
+}
+@media screen and (max-width: 768px)    {
+  .firstn{font-size: 1.5em;} .surn{font-size: 1.5em;} .freet{font-size: 1.5em;} .freetcont{max-width: 100vw;} #hobbies{max-width: 100%;} .unreal img{padding-bottom: 15px;} .unity img{padding-top: 10px; padding-bottom: 10px;}
+  .fmod img{padding-top: 10px; padding-bottom: 10px;} .snip0015{align-content: center;}
+}
+@media screen and (max-width: 576px)    {
+  .firstn{font-size: 1.2em;} .surn{font-size: 1.2em;}
+}
+@media screen and (max-width: 320px)    {
+  .firstn{font-size: 1.2em;} .surn{font-size: 1.2em;}
 }
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
 figure.snip0015 {
@@ -205,7 +254,7 @@ figure.snip0015 {
   color: #fff;
   position: relative;
   overflow: hidden;
-  margin: 10px;
+  margin-right: 0px;
   min-width: 220px;
   max-width: 310px;
   max-height: 220px;
@@ -303,9 +352,9 @@ figure.snip0015:hover figcaption::before {
   transition-delay: 0s;
 }
 @font-face {font-family:"Louis George Café Light";
-src:url("/resources/fonts/Louis_George_Cafe_Light.eot?") format("eot"),
-url("/resources/fonts/Louis_George_Cafe_Light.woff") format("woff"),
-url("/resources/fonts/Louis_George_Cafe_Light.ttf") format("truetype"),
-url("/resources/fonts/Louis_George_Cafe_Light.svg#LouisGeorgeCafeLight") format("svg");
+src:url("Louis_George_Cafe_Light.eot?") format("eot"),
+url("Louis_George_Cafe_Light.woff") format("woff"),
+url("Louis_George_Cafe_Light.ttf") format("truetype"),
+url("Louis_George_Cafe_Light.svg#LouisGeorgeCafeLight") format("svg");
 font-weight:normal;
 font-style:normal;}
