@@ -4,13 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
+    <meta name="description" content="Personal page for Máté Moldován, Music composer and sound-designer for games">
+    <meta name="keywords" content="music, sound-design, designer, sound, games, composer,">
+    <meta property="og:title" content="Máté Moldován - Music composer and sound-designer for games">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://matemoldovan.com">
+    <meta property="og:description" content="Personal page for Máté Moldován, Music composer and sound-designer for games">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
     <title>Máté Moldován</title>
     <link href="resources/css/custom.css" type="text/css" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132998510-1"></script>
+    <script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-132998510-1'); </script>
     <link rel="shortcut icon" type="image/" href="resources/favicon.ico"/>
-    <link rel="stylesheet" href="resources/css/audioplayer.css" />
+    <link rel="stylesheet" type="text/css" href="audioplayerengine/initaudioplayer-1.css">
+    <link rel="stylesheet" type="text/css" href="audioplayerengine/initaudioplayer-2.css">
+    <link rel="stylesheet" type="text/css" href="audioplayerengine/initaudioplayer-3.css">
+    <link rel="stylesheet" type="text/css" href="audioplayerengine/initaudioplayer-4.css">
+    <link rel="stylesheet" type="text/css" href="audioplayerengine/initaudioplayer-5.css">
+    <link rel="stylesheet" type="text/css" href="audioplayerengine/initaudioplayer-6.css">
   </head>
   <body>
     <header>
@@ -26,6 +39,7 @@
         <a class="nav-item nav-link" href="#">Home</a>
         <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
         <a class="aboutme nav-item nav-link" href="aboutme.html">My Story</a>
+        <a class="nav-item nav-link" href="samples.html">Samples</a>
         <a class="nav-item nav-link" href="contact.html">Contact</a>
       </div>
     </div>
@@ -45,7 +59,23 @@
           </div>
         </div>
       </div>
-
+<!-- Top News
+      <div class="news">
+        <div class="container">
+          <h1 class="align-middle text-center">Latest <span>news</span></h1>
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="resources/images/vgm.jpg" alt="">
+            </div>
+            <div class="col-lg-6">
+              <h3>I accepted the <span>#21DaysofVGM</span> winter challenge to write new #gamemusic every day for 21 days straight</h3>
+                <h4>If you’re interested in what I can write in a day, follow me on <a target="_blank" href="http://www.soundcloud.com/matemoldovan">Soundcloud</a></h4>
+                <h4>Wishing good luck to all of my fellow composers.</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+-->
 <!--Music section -->
 
   <div id="portfolio" class="container">
@@ -54,52 +84,76 @@
       <div id="descrip" class="col-lg-5 text-center align-middle">
           <h2>Grønland - Icy mountains</h2>
           <p>A chilling track for snowy environment.</p>
-        <audio preload="auto" controls>
-            <source src="audio/Gronland.wav">
+          <div id="amazingaudioplayer-1" style="display:block;position:relative;width:100%;max-width:420px;height:auto;margin:0px auto 0px;">
+              <ul class="amazingaudioplayer-audios" style="display:none;">
+                  <li data-artist="" data-title="Grønland - Icy mountains" data-album="" data-info="" data-image="" data-duration="0">
+                      <div class="amazingaudioplayer-source" data-src="audio/Gronland.wav" data-type="audio/mpeg" ></div>
+                  </li>
+              </ul>
+          </div>
         </audio>
       </div>
       <div id="descrip" class="col-lg-5 text-center align-middle">
           <h2>Boss Fight - Who’s the winner?</h2>
           <p>The enemy is around the corner, will you run or fight?</p>
-        <audio preload="auto" controls>
-            <source src="audio/VGM9.wav">
-        </audio>
+          <div id="amazingaudioplayer-2" style="display:block;position:relative;width:100%;max-width:420px;height:auto;margin:0px auto 0px;">
+              <ul class="amazingaudioplayer-audios" style="display:none;">
+                  <li data-artist="" data-title="Boss Fight - Who’s the winner?" data-album="" data-info="" data-image="" data-duration="0">
+                      <div class="amazingaudioplayer-source" data-src="audio/VGM9.wav" data-type="audio/mpeg" ></div>
+                  </li>
+              </ul>
+          </div>
       </div>
-</div>
-<div class="row justify-content-around">
-  <div id="descrip" class="col-lg-5 text-center align-middle">
-        <h2>Stealth Mode - The undercover agent</h2>
-        <p>The music you need when you secretly enter your sister’s room.</p>
-    <audio preload="auto" controls>
-        <source src="audio/21VGM8.wav">
-    </audio>
-  </div>
-  <div id="descrip" class="col-lg-5 text-center align-middle">
-        <h2>Aokigahara - The haunted forest</h2>
-        <p>The sound of a place where you don’t want to be. Perfect for dark  jungle scenes. </p>
-    <audio preload="auto" controls>
-        <source src="audio/21VGM1.wav">
-    </audio>
-  </div>
-</div>
-<div class="row justify-content-around">
-  <div id="descrip" class="col-lg-5 text-center align-middle">
-        <h2>Etna - The eruption</h2>
-        <p>Something bad is about to happen….you better run for your life!</p>
-    <audio preload="auto" controls>
-
-        <source src="audio/VGM5.wav">
-    </audio>
-  </div>
-  <div id="descrip" class="col-lg-5 text-center align-middle">
-        <h2>Digital Sea - The underwater level</h2>
-        <p>Calm sounds for a peaceful deep dive.</p>
-    <audio preload="auto" controls>
-        <source src="audio/VGM15.wav">
-    </audio>
-  </div>
-</div>
-</div>
+      </div>
+      <div class="row justify-content-around">
+        <div id="descrip" class="col-lg-5 text-center align-middle">
+              <h2>Stealth Mode - The undercover agent</h2>
+              <p>The music you need when you secretly enter your sister’s room.</p>
+              <div id="amazingaudioplayer-3" style="display:block;position:relative;width:100%;max-width:420px;height:auto;margin:0px auto 0px;">
+                  <ul class="amazingaudioplayer-audios" style="display:none;">
+                      <li data-artist="" data-title="Stealth Mode - The undercover agent" data-album="" data-info="" data-image="" data-duration="0">
+                          <div class="amazingaudioplayer-source" data-src="audio/21VGM8.wav" data-type="audio/mpeg" ></div>
+                      </li>
+                  </ul>
+              </div>
+        </div>
+        <div id="descrip" class="col-lg-5 text-center align-middle">
+              <h2>Aokigahara - The haunted forest</h2>
+              <p>The sound of a place where you don’t want to be. Perfect for dark  jungle scenes. </p>
+              <div id="amazingaudioplayer-4" style="display:block;position:relative;width:100%;max-width:420px;height:auto;margin:0px auto 0px;">
+                  <ul class="amazingaudioplayer-audios" style="display:none;">
+                      <li data-artist="" data-title="Aokigahara - The haunted forest" data-album="" data-info="" data-image="" data-duration="0">
+                          <div class="amazingaudioplayer-source" data-src="audio/21VGM1.wav" data-type="audio/mpeg" ></div>
+                      </li>
+                  </ul>
+              </div>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div id="descrip" class="col-lg-5 text-center align-middle">
+              <h2>Etna - The eruption</h2>
+              <p>Something bad is about to happen….you better run for your life!</p>
+              <div id="amazingaudioplayer-5" style="display:block;position:relative;width:100%;max-width:420px;height:auto;margin:0px auto 0px;">
+                  <ul class="amazingaudioplayer-audios" style="display:none;">
+                      <li data-artist="" data-title="Etna - The eruption" data-album="" data-info="" data-image="" data-duration="0">
+                          <div class="amazingaudioplayer-source" data-src="audio/VGM5.wav" data-type="audio/mpeg" ></div>
+                      </li>
+                  </ul>
+              </div>
+        </div>
+        <div id="descrip" class="col-lg-5 text-center align-middle">
+              <h2>Digital Sea - The underwater level</h2>
+              <p>Calm sounds for a peaceful deep dive.</p>
+              <div id="amazingaudioplayer-6" style="display:block;position:relative;width:100%;max-width:420px;height:auto;margin:0px auto 0px;">
+                  <ul class="amazingaudioplayer-audios" style="display:none;">
+                      <li data-artist="" data-title="Digital Sea - The underwater level" data-album="" data-info="" data-image="" data-duration="0">
+                          <div class="amazingaudioplayer-source" data-src="audio/VGM15.wav" data-type="audio/mpeg" ></div>
+                      </li>
+                  </ul>
+              </div>
+        </div>
+      </div>
+      </div>
 
 <!--Slider section -->
 
@@ -198,10 +252,10 @@
       <div class="container design">
         <div class="row">
           <div class="col-lg-12">
-            <h4 class="">site by <a href="mailto:oliver.siket@gmail.com">Oliver Siket©</a></h4>
+            <h4 class="">site by <a target="_blank" href="http://oliversiket.com">Oliver Siket</a>©</h4>
           </div>
           <div class="col-lg-12">
-            <h4 class="">copyright Máté Moldován ©2018</h4>
+            <h4 class="">copyright Máté Moldován ©2019</h4>
         </div>
         </div>
       </div>
@@ -211,8 +265,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="audioplayerengine/amazingaudioplayer.js"></script>
+    <script src="audioplayerengine/initaudioplayer-1.js"></script>
+    <script src="audioplayerengine/initaudioplayer-2.js"></script>
+    <script src="audioplayerengine/initaudioplayer-3.js"></script>
+    <script src="audioplayerengine/initaudioplayer-4.js"></script>
+    <script src="audioplayerengine/initaudioplayer-5.js"></script>
+    <script src="audioplayerengine/initaudioplayer-6.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/audioplayer.js"></script>
-    <script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+
   </body>
 </html>

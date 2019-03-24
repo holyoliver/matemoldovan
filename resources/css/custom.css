@@ -74,6 +74,18 @@ nav{
 	-o-transition: 0.5s;
 	transition: 0.5s;
 }
+.navbar-collapse{
+  background-color:;
+}
+.news h1{line-height: 3em;text-transform: uppercase;letter-spacing: 4px;font-weight: bolder;}
+.news h3{text-align: justify; text-justify: inter-word; padding-bottom: 10px;}
+.news h4{text-align: justify; text-justify: inter-word; padding-bottom: 10px;}
+.news span{color: #FDCA40;}
+.news a{color: #ff8800;}
+.news a:hover{text-decoration: none;}
+.news{max-width: 75vw; padding-top: 40px; padding-bottom: 40px;}
+.news img{width: 100%; height: auto;}
+.news p{text-align: justify; text-justify: inter-word; font-size: 1.2em;}
 #mainscreen{
   padding-top: 80px;
   min-height: 100vh;
@@ -190,8 +202,21 @@ nav{
   .navbar-nav{
     font-size: 1em;
   }
+  .news img{padding-bottom: 30px;}
+  .news h3{font-size: 1.5em;}
+  .news h4{}
 }
+@media only screen  and (max-width : 1224px) {
+  .news h3{font-size: 1.5em;}
+  .news h4{}
+}
+
 @media screen and (max-width: 768px)    {
+.news{max-width: 100vw;}
+.news img{padding-bottom: 30px;}
+.news h3{font-size: 1.2em;}
+.news h4{font-size: 1.2em;}
+.news h1{font-size: 2em;}
 #aboutme{
   max-width: 100vw;
 }
