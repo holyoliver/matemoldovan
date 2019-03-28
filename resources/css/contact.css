@@ -1,0 +1,108 @@
+body, html{
+    font-family: 'Louis George Café Light', 'Didact Gothic';
+    font-size: 16px;
+    scroll-behavior: smooth;
+    color: #F0FFFF;
+}
+.firstn{
+  color: #F0FFFF;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  flex-grow: 2;
+  font-size: 2em;
+  letter-spacing: 5px;
+  color: #F0FFFF;
+  font-size: 2em;
+  padding-left: 40px;
+}
+.firstn a{
+  color: #F0FFFF !important;
+}
+.firstn a:hover{
+  text-decoration: none !important;
+  color: #F0FFFF !important;
+}
+.contactform{
+  padding-left: 15px;
+  padding-top: 70px;
+  max-width: 75vw;
+}
+.socialmedia{
+  height: x;
+  max-width: 75vw;
+  margin-left: 0;
+  padding-top: 60px;
+}
+.socialmedia span{
+  color: #FDCA40;
+}
+.socialmedia h1{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.sicon{
+  color: #F0FFFF;
+}
+.sicon:hover{
+    color: #ffe375;
+}
+#contactme{
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+#contactme span{
+    color: #FDCA40;
+}
+.contactform label{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.contactform p{
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.contactform h2{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.contactform textarea{
+  font-weight: bolder !important;
+  font-size: 20px !important;
+}
+.contactform input {
+  font-size: 20px !important;
+  font-weight: bolder !important;
+}
+.design{
+
+  letter-spacing: 1px;
+  padding-top: 50px;
+  max-width: 75vw;
+  margin-left: 0;
+}
+.design h4{
+  line-height: .8em;
+  font-size: 1.2em;
+}
+.design a:hover{
+  color: #ffe375;
+}
+.design a{
+  color: #F0FFFF;
+}
+@media screen and (max-width: 992px)    {
+
+
+}
+@media screen and (max-width: 768px)    {
+.surn{font-size: 1.3em;} .firstn{font-size: 1.3em;} .socialmedia h1{font-size: 1.5em;} .contactform{padding-left: 15px; padding-right: 15px;}
+.contactform{max-width: 100%;} #contactme{font-size: 1.8em;}
+}
+@media screen and (max-width: 576px)    {
+.socialmedia{max-width: 100vw;}
+.soci {padding: 20px;}
+
+}
+@media screen and (max-width: 320px)    {
+  .firstn{font-size: 1.2em;} .surn{font-size: 1.2em;}
+}
