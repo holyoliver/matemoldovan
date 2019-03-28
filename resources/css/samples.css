@@ -32,11 +32,10 @@ body, html{
   letter-spacing: 1px;
   margin-top: 20px;
 }
-<<<<<<< HEAD
 @media screen and (max-width: 768px)    {
 .samples{  max-width: 100vw;  }
+.samples h1{font-size: 2em;}
+.samples p{font-size: 1em;}
 .offbtn{ margin-bottom: 20px;}
 .skatebtn{ margin-bottom: 20px;}
 }
-=======
->>>>>>> 2cebf80826203a6aadbd0f1454b8886450ae2174
